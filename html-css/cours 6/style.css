@@ -1,0 +1,22 @@
+h1{
+  color: green;
+}
+
+a{
+  color: green;
+}
+
+img{
+  border-radius: 100%;
+  border-style: solid;
+  border-color: #09bcff;
+}
+
+
+.my-uppercased-list li{
+  text-transform: uppercase;
+}
+
+.orange-text{
+  color: orange;
+}

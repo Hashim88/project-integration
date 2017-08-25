@@ -1,0 +1,87 @@
+body {
+  margin: 0px;
+}
+
+h1{
+  margin: 0px;
+}
+
+.top{
+  height: 150px;
+  background-color: blue;
+}
+
+.left{
+  width: 200px;
+  height: 500px;
+  background-color: green;
+  float: left;
+}
+
+.right{
+  overflow: hidden;
+  background-color: yellow;
+  height: 500px;
+}
+
+h1{
+  /*margin: 0;*/
+  /*padding: 0;*/
+  text-align: center;
+}
+
+.bob{
+  color: white;
+}
+
+p{
+  color: red;
+}
+
+.img{
+  width:200px;
+}
+
+
+tr:nth-child(even) {
+  background-color: green;
+}
+
+tr:nth-child(odd) {
+  background-color: blue;
+}
+
+th {
+  background-color: red;
+}
+
+table {
+  color: white;
+}
+
+/*tr:nth-child(odd) {
+    background-color: blue;
+}
+
+tr:nth-child(even) {
+    background-color: green;
+}*/
+
+/*tr th{
+  background-color: blue;
+}
+
+th {
+  color: white;
+}*/
+
+
+.profile-card{
+  width: 345px;
+}
+
+.cover{
+  background: url("../images/cover.jpeg");
+  height: 135px;
+}
+

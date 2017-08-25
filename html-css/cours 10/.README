@@ -1,0 +1,4 @@
+- Différence entre display inline/inline-block/block
+- Explication du model box (http://www.w3schools.com/css/css_boxmodel.asp) - Différence entre content/padding/border/margin
+- Correction des margin par default du body et des h1/h2
+- Creation d'articles à l'intérieur du container .right en inline-block
