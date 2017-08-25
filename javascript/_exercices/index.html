@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Exercices</title>
+
+  </head>
+  <body>
+
+    <h2>Ouvrez la console du navigateur pour voir l'exercice</h2>
+    <p>(click droit puis "Inspecter")</p>
+
+
+    <script type="text/javascript">
+      console.log('Hello Guys!');
+      console.log('Dans le fichier "main.js" se trouvent les fonctions demandées par notre client, mais qui pour la plupart, ne fonctionnent pas ou n\'ont pas eu le temps d\'être implémentées.');
+      console.log('À vous de les corriger ou d\'implémenter les fonctions manquantes ;) ');
+      console.log('Have fun!\n');
+
+
+
+      /**
+       * Voici un exemple
+       * d'une fonction qui a été implémentée et fonctionne correctement
+       *
+       * Définir une fonction max() qui prend deux nombres comme arguments et retourne
+       * le plus grand des deux.
+       */
+      var max = function (a, b) {
+        if(a > b){
+          return a;
+        }else{
+          return b
+        }
+      };
+
+      // Affiche les résultats dans la console
+      console.log('\n\nExemple - Résultat de la fonction max:');
+      console.log(max(123, 43));
+
+
+
+      /**
+       * -- Exercice 1 --
+       *
+       * Maintenant à vous de jouer!
+       * Notre collègue Alexandre Bredy n'a pas eu le temps suffisant pour implémenter cette
+       * fonction, à vous d'écrire sa logique.
+       *
+       * Définir une fonction min() qui prend deux nombres comme arguments et retourne
+       * le plus petit des deux.
+       */
+       var min = function (a, b) {
+
+       };
+
+      // Affiche les résultats dans la console
+      console.log('\n\nExercice 1 - Résultat de la fonction min:');
+      console.log(min(123, 43));
+
+
+
+      /**
+       * -- Exercice 2 --
+       *
+       * On continue, la fonction suivante doit retourner l'age de l'object personne
+       * qui lui est passé en parametre, le client s'est plein que la fonction
+       * affiche le nom de le personne et non son âge.
+       * Corriger l'erreur.
+       *
+       * Définir une fonction getAge() qui prend un object "personne"
+       * comme arguments et retourne son age
+       */
+       var getAge = function (personne) {
+         return personne.name;
+       };
+
+       // L'object personne que l'on passe en arguments à la fonction
+       var personne1 = {
+         name: "John",
+         age: 18
+       }
+
+      // Affiche les résultats de la fonction getAge avec personne1 passé en parametre dans la console
+      console.log('\n\nExercice 2 - Résultat de la function getAge:');
+      console.log(getAge(personne1));
+
+
+
+      /**
+       * -- Exercice 3 --
+       *
+       * La fonction suivante doit retourner les nombre inférieur à 10,
+       * malheuresement elle n'a pas l'air de fonctionner correctement.
+       * Trouver le bug et le corriger.
+       *
+       * Définir une fonction nombresInferieurADix() qui prend un tableau de nombres
+       * et retourne ceux inférieurs à 10
+       */
+       var nombresInferieurADix = function (nombres) {
+
+         //  On défini le tableau qui va contenir
+         //  les nombres inférieur à 10
+         var nombresValides = [];
+
+         // On traverse le tableau de nombres passé en parametre
+         for (var i = 0; i < nombres.length; i++) {
+           // On vérifie que le nombre esdt inférieur à 10
+           if(nombres[i] >= 10){
+             //  On ajoute le nombre valide au tableau de nombre valides
+             nombresValides.push(nombres[i])
+           }
+         }
+        //  On retourn le tableau de nombre valides
+         return nombresValides;
+       };
+
+       // Tableau de valeur que l'on passe en arguments à la fonction
+       var nombres = [111, 2, 6, 21, 18, 9, 58, 43, 15, 10];
+
+       // Affiche les résultats dans la console
+      console.log('\n\nExercice 3 - Résultat de la function nombresInferieurADix:');
+      console.log(nombresInferieurADix(nombres));
+
+
+
+      /**
+       * -- Exercice 4 --
+       *
+       * La fonction suivante doit retourner les nombres paires (2, 4, 6, 8 ,10, etc),
+       * La logique à implémenter ressemble beaucoup à la fonction de l'excerice 3
+       * Implémenter vous-même la logique.
+       *
+       * Définir une fonction nombresPairs() qui prend un tableau de nombres
+       * et retourne ceux qui sont pairs
+       */
+       var nombresPairs = function (nombres) {
+
+         //  On défini le tableau qui va contenir les nombres pair
+         //  TODO
+
+         // On traverse le tableau de nombres passé en parametre
+         // TODO
+
+           // On traverse le tableau de nombres passé en parametre
+           // On vérifie que le nombre est un nombre pair (indice: "modulo")
+           // TODO
+
+             // On ajoute le nombre valide au tableau de nombre valides
+             // TODO
+
+
+         // On retourn le tableau de nombre valides
+         // TODO
+
+       };
+
+       // Tableau de valeur que l'on passe en arguments à la fonction
+       var nombres = [1, 2, 3, 4, 5, 6, 7, 8 ,9 ,10];
+
+       // Affiche les résultats dans la console
+      console.log('\n\nExercice 4 - Résultat de la function nombresInferieurADix:');
+      console.log(nombresPairs(nombres));
+
+    </script>
+  </body>
+</html>

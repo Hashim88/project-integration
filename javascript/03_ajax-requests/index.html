@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple AJAX Example </title>
+</head>
+<body>
+  <h1>Post</h1>
+  <div id="post"></div>
+
+  <button onclick="getPost()">get post</button>
+
+  <script type="text/javascript">
+
+    // Executed on button "get post" clicked
+    function getPost(){
+      // Instanciation XMLHttpRequest object
+      var xmlhttp = new XMLHttpRequest();
+      // Define request
+      xmlhttp.open("GET", "https://jsonplaceholder.typicode.com/posts/1", true);
+
+      xmlhttp.onreadystatechange = function() {
+
+        /**
+         * 0: Hasn't Started
+         * 1: Connected to server
+         * 2: Server has recieved our request
+         * 3: Server processing
+         * 4: Request is finished and data is ready
+         */
+        if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+          document.getElementById("post").innerHTML = xmlhttp.responseText;
+        }else{
+          document.getElementById("post").innerHTML = "Request loading";
+        }
+      }
+
+      // Send request
+      xmlhttp.send();
+    }
+  </script>
+</body>
+</html>

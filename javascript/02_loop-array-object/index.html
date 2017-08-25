@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+  // -- ARRAY --
+  var myArray = ["apple", "banana", "orange"];
+
+  myArray[0]; // banana
+
+  // Loop for array
+  for(var i = 0; i < myArray.length; i++){
+    console.log("At i: "+ i +" - item: "+ myArray[i]);
+  }
+
+  // -- OBJECT --
+  var person1 = {
+    name: "John Doe",
+    age: 18,
+    city: "Geneva"
+  }
+
+  person1.name; // "John Doe"
+  person1["name"]; // "John Doe"
+
+  // Loop for object
+  for(var key in person1){
+    console.log('key:' + key + " has value:" + person1[key])
+  }
+
+  var person2 = {
+    name: "Albert Ville",
+    age: 23,
+    city: "Lausanne"
+  }
+
+  var people = [person1, person2];
+
+  for(var i = 0; i < 2; i++){
+    var person = people[i];
+    console.log("name: " + person.name)
+  }
+
+  /**
+   * Return the age of the person name we are searching from "people" array
+   */
+  function searchPersonAge(name){
+    // TODO
+
+  }
+
+  searchPersonAge("Albert Ville") // 23
+  searchPersonAge("John Doe") // 18
+
+</script>
+</body>
+</html>
