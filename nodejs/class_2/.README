@@ -1,0 +1,6 @@
+- Defining which data do we need for a tchat app
+- What is a database? What is a table? How data is saved?
+- List routes that we are going to need to build a tchat app
+- How to catch requests from clients?
+- Add routing logic to handle the different routes
+- Return 404 error in case client try to access a route that we don't provide
