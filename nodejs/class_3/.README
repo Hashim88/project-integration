@@ -1,0 +1,4 @@
+- Spreadsheet database example: https://docs.google.com/spreadsheets/d/1M3AhBhQvIy9jST5jfvZLN7TUuuJe52eM7s87QSTjZz4/edit?usp=sharing
+- Install mysql server (https://dev.mysql.com/downloads/installer/)
+- Install mysql workbench (https://dev.mysql.com/downloads/workbench/)
+- Create Users Table & Messages Table
